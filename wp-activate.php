@@ -19,7 +19,7 @@ if ( !is_multisite() ) {
 	wp_redirect( wp_registration_url() );
 	die();
 }
-
+$data=0;
 if ( is_object( $wp_object_cache ) )
 	$wp_object_cache->cache_enabled = false;
 
